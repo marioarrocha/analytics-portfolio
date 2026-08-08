@@ -4,7 +4,7 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav">
           <a href="/" className="brand">
-            Mario Rocha
+            Mario Arrocha
           </a>
 
           <nav className="nav-links" aria-label="Primary navigation">
@@ -165,7 +165,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container footer-content">
-          <span>Mario Rocha</span>
+          <span>Mario Arrocha</span>
           <span>Analytics Portfolio</span>
         </div>
       </footer>

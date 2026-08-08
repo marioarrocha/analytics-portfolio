@@ -252,11 +252,85 @@ a {
   font-size: 13px;
 }
 
+.page-hero {
+  padding: 110px 0 90px;
+}
+
+.page-hero h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.page-intro {
+  max-width: 700px;
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+.work-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.work-card h2 {
+  margin: 0 0 20px;
+}
+
+.work-outcome {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.coming-soon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.coming-soon-card {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+}
+
+.coming-soon-card h3 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.coming-soon-card p {
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.coming-soon-card span {
+  color: #8a8a8a;
+  font-size: 13px;
+}
+
 @media (max-width: 800px) {
   .nav {
     align-items: flex-start;
     flex-direction: column;
     padding: 22px 0;
+  }
+
+    .work-card,
+  .coming-soon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding: 80px 0 64px;
   }
 
   .nav-links {
