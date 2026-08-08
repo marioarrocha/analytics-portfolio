@@ -1,69 +1,174 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main>
+      <header className="site-header">
+        <div className="container nav">
+          <a href="/" className="brand">
+            Mario Rocha
+          </a>
+
+          <nav className="nav-links" aria-label="Primary navigation">
+            <a href="/">Home</a>
+            <a href="/work">Work</a>
+            <a href="/about">About</a>
+            <a href="/resume">Resume</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="hero">
+        <div className="container">
+          <p className="eyebrow">Analytics · Strategy · Decision Support</p>
+
+          <h1>
+            Designing analytical systems that improve business decisions.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="hero-copy">
+            I design decision-support frameworks and enterprise analytics
+            solutions that help organizations improve operations, uncover
+            opportunities, and make better business decisions.
           </p>
+
+          <div className="hero-actions">
+            <a className="button button-primary" href="/work">
+              Explore My Work
+            </a>
+
+            <a className="button button-secondary" href="/resume">
+              View Resume
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <p className="section-label">Business Impact</p>
+
+          <div className="impact-grid">
+            <div>
+              <strong>500+</strong>
+              <span>Daily business users supported</span>
+            </div>
+
+            <div>
+              <strong>$8M+</strong>
+              <span>Estimated profitability opportunity identified</span>
+            </div>
+
+            <div>
+              <strong>Enterprise</strong>
+              <span>Decision-support systems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-muted">
+        <div className="container">
+          <p className="section-label">Featured Work</p>
+
+          <div className="featured-project">
+            <div className="project-copy">
+              <h2>Account Health Framework</h2>
+
+              <p>
+                A standardized framework for evaluating customer value beyond
+                revenue through contribution, growth, cash flow, and cost to
+                serve.
+              </p>
+
+              <a href="/work/account-health" className="text-link">
+                View Case Study →
+              </a>
+            </div>
+
+            <div className="project-placeholder">
+              Project visual placeholder
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <p className="section-label">My Approach</p>
+
+          <div className="approach-grid">
+            <div>
+              <span>01</span>
+              <h3>Understand</h3>
+              <p>Start with the business problem before considering tools.</p>
+            </div>
+
+            <div>
+              <span>02</span>
+              <h3>Design</h3>
+              <p>Translate business questions into analytical frameworks.</p>
+            </div>
+
+            <div>
+              <span>03</span>
+              <h3>Build</h3>
+              <p>Develop scalable solutions that fit real operating workflows.</p>
+            </div>
+
+            <div>
+              <span>04</span>
+              <h3>Measure</h3>
+              <p>Evaluate success through adoption and business outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-muted">
+        <div className="container narrow">
+          <p className="section-label">About</p>
+
+          <h2>Business-first analytics with strong technical execution.</h2>
+
+          <p>
+            I&apos;m an analytics professional focused on building systems that
+            help organizations understand performance, improve operations, and
+            make better decisions.
+          </p>
+
+          <a href="/about" className="text-link">
+            More About Me →
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section">
+        <div className="container narrow final-cta">
+          <h2>Interested in my work?</h2>
+
+          <p>
+            Explore my experience or connect with me to discuss analytics,
+            strategy, and decision-support systems.
+          </p>
+
+          <div className="hero-actions">
+            <a className="button button-primary" href="/resume">
+              View Resume
+            </a>
+
+            <a className="button button-secondary" href="/contact">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="site-footer">
+        <div className="container footer-content">
+          <span>Mario Rocha</span>
+          <span>Analytics Portfolio</span>
+        </div>
+      </footer>
+    </main>
   );
 }
