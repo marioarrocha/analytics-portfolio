@@ -454,6 +454,54 @@ a {
   margin-top: 24px;
 }
 
+.qualification-list {
+  margin-top: 42px;
+  border-top: 1px solid var(--border);
+}
+
+.qualification-list > div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 28px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.qualification-list strong {
+  font-size: 15px;
+}
+
+.qualification-list span {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.contact-list {
+  border-top: 1px solid var(--border);
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-item span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.contact-item strong {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-item:hover strong {
+  color: var(--accent);
+}
+
 @media (max-width: 800px) {
   .nav {
     align-items: flex-start;
@@ -464,6 +512,12 @@ a {
     .work-card,
   .coming-soon-grid {
     grid-template-columns: 1fr;
+  }
+
+    .qualification-list > div,
+  .contact-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .page-hero {

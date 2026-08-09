@@ -11,7 +11,6 @@ export default function Home() {
             <a href="/">Home</a>
             <a href="/work">Work</a>
             <a href="/about">About</a>
-            <a href="/resume">Resume</a>
             <a href="/contact">Contact</a>
           </nav>
         </div>
@@ -36,9 +35,9 @@ export default function Home() {
               Explore My Work
             </a>
 
-            <a className="button button-secondary" href="/resume">
-              View Resume
-            </a>
+<a className="button button-secondary" href="/about">
+  About Me
+</a>
           </div>
         </div>
       </section>
@@ -152,8 +151,8 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href="/resume">
-              View Resume
+            <a className="button button-primary" href="/about">
+              About Me
             </a>
 
             <a className="button button-secondary" href="/contact">

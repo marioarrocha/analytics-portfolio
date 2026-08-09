@@ -11,7 +11,6 @@ export default function WorkPage() {
             <a href="/">Home</a>
             <a href="/work">Work</a>
             <a href="/about">About</a>
-            <a href="/resume">Resume</a>
             <a href="/contact">Contact</a>
           </nav>
         </div>
