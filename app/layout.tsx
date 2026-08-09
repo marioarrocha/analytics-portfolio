@@ -13,13 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-metadataBase: new URL("https://www.marioarrocha-analytics.com"),
+  metadataBase: new URL("https://www.marioarrocha-analytics.com"),
   title: {
     default: "Mario Arrocha | Analytics Portfolio",
     template: "%s | Mario Arrocha",
   },
   description:
     "Analytics portfolio featuring decision-support frameworks, business intelligence solutions, and data-driven projects focused on operations, profitability, and strategic decision-making.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
