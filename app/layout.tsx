@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://analytics-portfolio-eight.vercel.app"),
+  metadataBase: new URL("https://marioarrocha-analytics.com"),
   title: {
     default: "Mario Arrocha | Analytics Portfolio",
     template: "%s | Mario Arrocha",
