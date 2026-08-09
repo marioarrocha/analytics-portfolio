@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Account Health Framework",
+  description:
+    "Case study on designing a weighted account health framework combining contribution, growth, cash flow, and cost to serve to support better commercial decisions.",
+};
+
 export default function AccountHealthPage() {
   return (
     <main>
@@ -31,13 +40,26 @@ export default function AccountHealthPage() {
             value beyond revenue.
           </p>
 
-          <div className="case-study-hero-placeholder">
-            Future hero framework visual
-          </div>
+          <div className="framework-diagram">
+  <div className="framework-grid">
+    <div>Contribution</div>
+    <div>Growth</div>
+    <div>Cash Flow</div>
+    <div>Cost to Serve</div>
+  </div>
+
+  <div className="framework-arrow">↓</div>
+
+  <div className="framework-score">Account Health Score</div>
+
+  <div className="framework-arrow">↓</div>
+
+  <div className="framework-outcome">Commercial Decision Support</div>
+</div>
         </div>
       </section>
 
-      <section className="case-study-section">
+      <section className="case-study-section case-study-muted">
         <div className="case-study-container">
           <p className="section-label">Overview</p>
 
@@ -58,18 +80,17 @@ export default function AccountHealthPage() {
             the evaluation methodology, developing the scoring model, building
             the Power BI solution, and collaborating with operations, finance,
             and executive leadership to validate and adopt the framework.
-            Today, it serves as the organization&apos;s standard approach to
-            account evaluation, supporting monthly portfolio reviews and
-            helping leadership make more informed commercial decisions.
+            Today, it supports monthly portfolio reviews and helps leadership make
+more informed commercial decisions.
           </p>
         </div>
       </section>
 
-      <section className="case-study-section case-study-muted">
+      <section className="case-study-section case-study">
         <div className="case-study-container">
           <p className="section-label">01</p>
 
-          <h2>The Challenge</h2>
+<h2>Why Revenue Wasn&apos;t Enough</h2>
 
           <p>
             Customer accounts were primarily evaluated through revenue and a
@@ -79,46 +100,23 @@ export default function AccountHealthPage() {
             was needed.
           </p>
 
-          <div className="case-study-placeholder">
-            Future before vs. after visual
-          </div>
+
         </div>
       </section>
 
-      <section className="case-study-section">
-        <div className="case-study-container">
-          <p className="section-label">02</p>
-
-          <h2>My Role</h2>
-
-          <p>
-            I led the design and implementation of the Account Health Framework
-            from concept to adoption. Working closely with operations, finance,
-            and executive leadership, I defined the evaluation methodology,
-            developed the weighted scoring model, built the Power BI solution,
-            and refined the framework through continuous collaboration and
-            real-world validation. I continue to build on this foundation
-            through additional analysis aimed at supporting predictive account
-            evaluation and commercial decision-making.
-          </p>
-        </div>
-      </section>
 
       <section className="case-study-section case-study-muted">
         <div className="case-study-container">
-          <p className="section-label">03</p>
+          <p className="section-label">02</p>
 
           <h2>The Solution</h2>
 
           <p>
-            Rather than evaluating accounts through independent financial
-            metrics, I designed a standardized framework that combines four
-            dimensions into a single Account Health Score: Contribution,
-            Growth, Cash Flow, and Cost to Serve. Each dimension represents a
-            key characteristic of a healthy customer relationship and
-            contributes to an overall score through a configurable weighted
-            methodology.
-          </p>
+  I built the Account Health Score around four dimensions: Contribution,
+  Growth, Cash Flow, and Cost to Serve. Each dimension captures a different
+  characteristic of customer value and contributes to the overall score
+  through a configurable weighting model.
+</p>
 
           <p>
             The framework was intentionally designed to remain flexible. By
@@ -129,50 +127,65 @@ export default function AccountHealthPage() {
             business.
           </p>
 
-          <div className="case-study-placeholder case-study-placeholder-large">
-            Future Account Health framework diagram
-          </div>
+          <figure className="case-study-visual">
+  <Image
+    src="/images/account-health/portfolio-summary.png"
+    alt="Portfolio Health summary dashboard showing account health scoring, component weights, account-level scores, trends, and health score distribution."
+    width={1654}
+    height={931}
+    className="case-study-image"
+  />
+
+<p className="case-study-note">
+  <strong>Demo data note:</strong> All customer names, account attributes,
+  classifications, and financial values shown in this case study have been
+  sanitized or transformed for public presentation. The demo uses a reduced
+  sample of 100 fictionalized accounts and does not represent actual
+  customers or business activity.
+</p>
+
+  <figcaption>
+    The portfolio summary combines configurable component weighting, account-level
+    scores, portfolio classifications, and historical trends into a single
+    decision-support view.
+  </figcaption>
+</figure>
         </div>
       </section>
 
       <section className="case-study-section">
         <div className="container">
           <div className="case-study-heading">
-            <p className="section-label">04</p>
-            <h2>Key Design Decisions</h2>
+            <p className="section-label">03</p>
+            <h2>Design Principles</h2>
           </div>
 
           <div className="decision-grid">
             <article className="decision-card">
-              <span>01</span>
-              <h3>Evaluate Customer Value Holistically</h3>
-              <p>
-                Account health should reflect more than revenue alone. The
-                framework combines financial performance, growth, payment
-                behavior, and operational efficiency into a single standardized
-                evaluation.
-              </p>
+              <h3>Holistic by Design</h3>
+
+<p>
+  Contribution, growth, cash flow, and cost to serve provide a broader view
+  of customer value than any single metric.
+</p>
             </article>
 
             <article className="decision-card">
-              <span>02</span>
-              <h3>Keep the Framework Adaptable</h3>
-              <p>
-                Business priorities change over time. The weighted scoring
-                model allows leadership to adjust the relative importance of
-                each dimension without redesigning the framework.
-              </p>
+              <h3>Built to Adapt</h3>
+
+<p>
+  Configurable weighting allows business priorities to change without
+  rebuilding the evaluation model.
+</p>
             </article>
 
             <article className="decision-card">
-              <span>03</span>
-              <h3>Validate Against Business Reality</h3>
-              <p>
-                The model was refined through collaboration with operations,
-                finance, and executive leadership until the scores consistently
-                reflected real-world account performance and commercial
-                expectations.
-              </p>
+              <h3>Grounded in Business Reality</h3>
+
+<p>
+  The scoring methodology was iteratively validated against known account
+  performance and stakeholder expectations.
+</p>
             </article>
           </div>
         </div>
@@ -180,36 +193,73 @@ export default function AccountHealthPage() {
 
       <section className="case-study-section case-study-muted">
         <div className="case-study-container">
-          <p className="section-label">05</p>
+          <p className="section-label">04</p>
 
           <h2>Business Impact</h2>
 
           <p>
-            The Account Health Framework became the organization&apos;s standard
-            methodology for evaluating customer accounts, providing leadership
-            with a consistent and transparent view of account quality across
-            the portfolio.
-          </p>
+  The framework supports monthly executive portfolio reviews through a
+  daily refreshed Power BI solution.
+</p>
 
-          <p>
-            The framework supports monthly executive portfolio reviews through
-            a daily refreshed Power BI solution and is actively used by
-            leadership to guide commercial discussions and account strategy. By
-            shifting the focus from revenue alone to long-term customer value,
-            it has helped identify underperforming partnerships, prioritize
-            healthier customer relationships, and establish a common language
-            for evaluating account health across the business.
-          </p>
+<p>
+  By shifting the focus from revenue alone to long-term customer value, it
+  helps identify underperforming partnerships, prioritize healthier customer
+  relationships, and establish a shared language for evaluating account
+  health across the business.
+</p>
 
-          <div className="case-study-placeholder case-study-placeholder-large">
-            Future dashboard screenshot / impact visual
-          </div>
+          <figure className="case-study-visual">
+  <Image
+    src="/images/account-health/AccountPositioning2.png"
+    alt="Account positioning analysis comparing health score and revenue across the customer portfolio."
+    width={1654}
+    height={931}
+    className="case-study-image"
+  />
+
+  <figcaption>
+    Comparing account health with revenue helped leadership distinguish
+    high-volume customers from genuinely healthy and strategically valuable
+    relationships.
+  </figcaption>
+</figure>
+
+<div className="case-study-insight">
+  <p className="section-label">From Portfolio Signal to Driver Analysis</p>
+
+  <h3>Move from a portfolio-level signal to the drivers behind it.</h3>
+
+  <p>
+  The drill-through workflow allows users to move from a portfolio-level
+  signal into the underlying drivers of an account&apos;s score. In the
+  sanitized demo below, a fictional account with meaningful revenue scores
+  poorly overall because weak contribution and cost-to-serve performance
+  outweigh stronger cash-flow performance.
+</p>
+</div>
+
+<figure className="case-study-visual">
+  <Image
+    src="/images/account-health/accountview.png"
+    alt="Account-level diagnostic view showing contribution, growth, cash flow, and cost-to-serve scores for an unhealthy customer account."
+    width={1654}
+    height={931}
+    className="case-study-image"
+  />
+
+  <figcaption>
+    The drill-through experience moved the analysis from identifying an
+    unhealthy account to understanding why it was unhealthy across contribution,
+    growth, cash flow, and cost to serve.
+  </figcaption>
+</figure>
         </div>
       </section>
 
       <section className="case-study-section">
         <div className="case-study-container">
-          <p className="section-label">06</p>
+          <p className="section-label">05</p>
 
           <h2>Implementation</h2>
 
@@ -221,26 +271,29 @@ export default function AccountHealthPage() {
             trusted for executive decision-making.
           </p>
 
-          <div className="case-study-placeholder">
-            Future technical architecture visual
-          </div>
+          <div className="architecture-strip">
+  <span>SQL Server</span>
+  <span>Analysis Services</span>
+  <span>Semantic Models</span>
+  <span>Power BI</span>
+  <span>Executive Decision Support</span>
+</div>
         </div>
       </section>
 
       <section className="case-study-section case-study-muted">
         <div className="case-study-container">
-          <p className="section-label">07</p>
+          <p className="section-label">06</p>
 
-          <h2>Looking Ahead</h2>
+          <h2>What the Framework Enables</h2>
 
           <p>
-            While the framework already serves as the organization&apos;s
-            standard approach to account evaluation, it also creates new
-            opportunities for advanced analytics. Future work includes
-            analyzing the relationship between account characteristics and
-            long-term health, enabling predictive account scoring and
-            supporting commercial decisions earlier in the sales process.
-          </p>
+  Beyond current portfolio evaluation, the Account Health Score creates a
+  consistent foundation for deeper analysis. Historical scores can be used
+  to study which customer characteristics are most associated with
+  long-term account health and, over time, support predictive analysis
+  earlier in the commercial process.
+</p>
         </div>
       </section>
 

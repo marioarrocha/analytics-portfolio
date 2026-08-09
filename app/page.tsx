@@ -47,21 +47,30 @@ export default function Home() {
           <p className="section-label">Business Impact</p>
 
           <div className="impact-grid">
-            <div>
-              <strong>500+</strong>
-              <span>Daily business users supported</span>
-            </div>
+  <div>
+    <strong>50+ reports</strong>
+    <span>
+      Governed and supported reporting used by 200+ business users across
+      multiple teams and workflows
+    </span>
+  </div>
 
-            <div>
-              <strong>$8M+</strong>
-              <span>Estimated profitability opportunity identified</span>
-            </div>
+  <div>
+    <strong>$8M+ opportunity</strong>
+    <span>
+      Identified estimated annual profitability improvement opportunities
+      through packaging and product-level analysis
+    </span>
+  </div>
 
-            <div>
-              <strong>Enterprise</strong>
-              <span>Decision-support systems</span>
-            </div>
-          </div>
+  <div>
+    <strong>8x+ faster</strong>
+    <span>
+      Reduced sourcing-plan preparation from roughly one project per day to
+      more than one per hour through automated decision support
+    </span>
+  </div>
+</div>
         </div>
       </section>
 
@@ -84,41 +93,12 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="project-placeholder">
-              Project visual placeholder
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <p className="section-label">My Approach</p>
-
-          <div className="approach-grid">
-            <div>
-              <span>01</span>
-              <h3>Understand</h3>
-              <p>Start with the business problem before considering tools.</p>
-            </div>
-
-            <div>
-              <span>02</span>
-              <h3>Design</h3>
-              <p>Translate business questions into analytical frameworks.</p>
-            </div>
-
-            <div>
-              <span>03</span>
-              <h3>Build</h3>
-              <p>Develop scalable solutions that fit real operating workflows.</p>
-            </div>
-
-            <div>
-              <span>04</span>
-              <h3>Measure</h3>
-              <p>Evaluate success through adoption and business outcomes.</p>
-            </div>
+            <div className="project-image">
+  <img
+    src="/images/account-health/portfolio-summary.png"
+    alt="Account Health Framework portfolio dashboard showing health scores, account segmentation, trends, and portfolio performance"
+  />
+</div>
           </div>
         </div>
       </section>
@@ -143,22 +123,17 @@ export default function Home() {
 
       <section className="section">
         <div className="container narrow final-cta">
-          <h2>Interested in my work?</h2>
+          <h2>Interested in discussing my work?</h2>
 
-          <p>
-            Explore my experience or connect with me to discuss analytics,
-            strategy, and decision-support systems.
-          </p>
+<div className="hero-actions">
+  <a className="button button-primary" href="/about">
+    About Me
+  </a>
 
-          <div className="hero-actions">
-            <a className="button button-primary" href="/about">
-              About Me
-            </a>
-
-            <a className="button button-secondary" href="/contact">
-              Contact Me
-            </a>
-          </div>
+  <a className="button button-secondary" href="/contact">
+    Get in Touch
+  </a>
+</div>
         </div>
       </section>
 

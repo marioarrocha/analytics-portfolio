@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn more about Mario Arrocha's background in analytics, economics, business, and data-driven decision support.",
+};
+
 export default function AboutPage() {
   return (
     <main>
@@ -23,18 +31,18 @@ export default function AboutPage() {
           <h1>Business-first analytics with a strategy mindset.</h1>
 
           <p className="page-intro">
-            I&apos;m a senior analytics professional focused on turning complex
-            business questions into structured analytical systems that improve
-            decisions, operations, and business performance.
-          </p>
+  I&apos;m an analytics professional focused on turning complex business
+  questions into structured analytical systems that improve decisions,
+  operations, and business performance.
+</p>
         </div>
       </section>
 
       <section className="section">
         <div className="container narrow">
-          <p className="section-label">How I Work</p>
+          <p className="section-label">What I Focus On</p>
 
-          <h2>I start with the business problem, not the tool.</h2>
+<h2>Analytics at the intersection of business, operations, and strategy.</h2>
 
           <p>
             The work I enjoy most sits at the intersection of analytics,
@@ -54,72 +62,74 @@ export default function AboutPage() {
       </section>
 
       <section className="section section-muted">
-        <div className="container narrow">
-          <p className="section-label">Background</p>
+  <div className="container narrow">
+    <p className="section-label">Background</p>
 
-          <h2>Analytics, business understanding, and continuous growth.</h2>
+    <p>
+      Originally from Madrid, Spain, I moved to the United States to pursue
+      both my academic and athletic career as an NCAA Division I soccer
+      student-athlete. That experience shaped how I approach my work today:
+      with discipline, teamwork, commitment, and the ability to perform under
+      pressure.
+    </p>
 
-          <p>
-            My background combines advanced academic training, experience as a
-            student-athlete, and progressively senior work in data analytics.
-            That combination shaped how I approach complex problems: with
-            structure, discipline, curiosity, and a strong focus on measurable
-            outcomes.
-          </p>
-
-          <p>
-            I&apos;m continuing to grow toward roles centered on analytics
-            strategy, business intelligence leadership, and data-driven
-            operational improvement.
-          </p>
-        </div>
-      </section>
+    <p>
+      Since then, I&apos;ve built my career in data analytics, with a growing
+      focus on the intersection of analytics, business strategy, and
+      operational decision-making.
+    </p>
+  </div>
+</section>
 
       <section className="section">
-        <div className="container narrow">
-          <p className="section-label">Qualifications</p>
+  <div className="container narrow">
+    <p className="section-label">Expertise &amp; Education</p>
 
-          <h2>Professional foundation</h2>
+    <div className="qualification-list">
+      <div>
+        <strong>Analytics</strong>
+        <span>
+          Business intelligence, decision support, data modeling, KPI design,
+          profitability analysis, and analytical frameworks
+        </span>
+      </div>
 
-          <div className="qualification-list">
-            <div>
-              <strong>Analytics</strong>
-              <span>
-                Business intelligence, decision support, data modeling, KPI
-                design, and analytical frameworks
-              </span>
-            </div>
+      <div>
+        <strong>Technical</strong>
+        <span>
+          Power BI, SQL, DAX, Power Query, semantic modeling, and data
+          visualization
+        </span>
+      </div>
 
-            <div>
-              <strong>Technical</strong>
-              <span>Power BI, SQL, DAX, Power Query, semantic modeling</span>
-            </div>
+      <div>
+        <strong>Master&apos;s</strong>
+        <span>
+          Economics — Econometrics and Quantitative Economics, Data Analytics
+          focus | Georgia State University
+        </span>
+      </div>
 
-            <div>
-              <strong>Education</strong>
-              <span>
-                Graduate-level education with a background shaped by collegiate
-                athletics
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div>
+        <strong>Bachelor&apos;s</strong>
+        <span>
+          B.S. Business Administration — Management &amp; Marketing (Double
+          Major), Magna Cum Laude | University of South Carolina Upstate
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="section section-muted">
-        <div className="container narrow final-cta">
-          <h2>Want the full professional background?</h2>
+  <div className="container narrow final-cta">
+    <h2>Interested in discussing my work or connecting?</h2>
 
-          <p>
-            A downloadable resume will be added here once the public version is
-            finalized.
-          </p>
-
-          <a className="button button-primary" href="/contact">
-            Get in Touch
-          </a>
-        </div>
-      </section>
+    <a className="button button-primary" href="/contact">
+      Get in Touch
+    </a>
+  </div>
+</section>
 
       <footer className="site-footer">
         <div className="container footer-content">

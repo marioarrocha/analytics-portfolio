@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Work",
+  description:
+    "Selected analytics projects focused on decision support, profitability, operations, and strategic business decision-making.",
+};
+
 export default function WorkPage() {
   return (
     <main>
@@ -45,18 +53,21 @@ export default function WorkPage() {
               </p>
 
               <p className="work-outcome">
-                Established a common methodology for account evaluation and
-                executive portfolio decision-making.
-              </p>
+  Adopted as the organization&apos;s framework for executive account
+  evaluation and portfolio decision-making.
+</p>
 
               <a href="/work/account-health" className="text-link">
                 View Case Study →
               </a>
             </div>
 
-            <div className="project-placeholder">
-              Account Health visual placeholder
-            </div>
+            <div className="project-image">
+  <img
+    src="/images/account-health/portfolio-summary.png"
+    alt="Account Health Framework portfolio dashboard showing health scores, account segmentation, trends, and portfolio performance"
+  />
+</div>
           </article>
         </div>
       </section>
