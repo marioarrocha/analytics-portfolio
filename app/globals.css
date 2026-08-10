@@ -527,6 +527,55 @@ a {
   border-top: 1px solid var(--border);
 }
 
+.case-study-title {
+  font-size: clamp(2.75rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  max-width: 14ch;
+  margin: 0;
+}
+
+.case-study-intro {
+  max-width: 760px;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.case-study-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.case-study-metrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.case-study-metrics strong {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1;
+  font-weight: 600;
+}
+
+.case-study-metrics span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .case-study-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
 .case-study-next .button {
   margin-top: 24px;
 }
