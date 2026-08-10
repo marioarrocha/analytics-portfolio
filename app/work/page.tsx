@@ -78,13 +78,19 @@ export default function WorkPage() {
 
           <div className="coming-soon-grid">
             <div className="coming-soon-card">
-              <h3>Sourcing Optimization Framework</h3>
-              <p>
-                Decision support for faster, more cost-effective fulfillment
-                planning.
-              </p>
-              <span>Case study in development</span>
-            </div>
+  <p className="section-label">Case Study</p>
+
+  <h3>Sourcing Optimization</h3>
+
+  <p>
+    A cost-based decision-support system for faster, more efficient project
+    sourcing.
+  </p>
+
+  <a href="/work/sourcing-optimization" className="text-link">
+    View Case Study →
+  </a>
+</div>
 
             <div className="coming-soon-card">
               <h3>Profitability Opportunity Framework</h3>
