@@ -42,23 +42,23 @@ export default function SourcingOptimizationPage() {
           </p>
 
           <div className="case-study-metrics">
-            <div>
-              <strong>10+</strong>
-              <span>warehouses evaluated</span>
-            </div>
+  <div>
+    <strong>15+</strong>
+    <span>warehouses evaluated across the sourcing network</span>
+  </div>
 
-            <div>
-              <strong>~15</strong>
-              <span>fulfillment coordinators</span>
-            </div>
+  <div>
+    <strong>8x+</strong>
+    <span>faster sourcing-plan preparation in early use</span>
+  </div>
 
-            <div>
-              <strong>~1 hour</strong>
-              <span>planning time in early usage</span>
-            </div>
-          </div>
+  <div>
+    <strong>Cost-ranked</strong>
+    <span>recommendations based on estimated logistics cost</span>
+  </div>
+</div>
 
-          <figure className="case-study-visual">
+          <figure className="case-study-visual case-study-visual-hero">
             <Image
               src="/images/sourcing-optimization/recommended-scenario.png"
               alt="Sourcing Optimization application showing the recommended staging scenario, sourcing KPIs, and warehouse transfer routes."
@@ -85,11 +85,10 @@ export default function SourcingOptimizationPage() {
 
           <p>
             Project fulfillment coordinators previously relied on manual
-            inventory checks and warehouse-by-warehouse comparison to build
-            sourcing plans for complex orders. The process could consume much
-            of a coordinator&apos;s day while providing limited visibility into
-            the cost implications of alternative sourcing decisions.
-          </p>
+inventory checks and warehouse-by-warehouse comparison to build
+sourcing plans for large project orders that required additional
+coordination, consolidation, and fulfillment oversight.
+</p>
 
           <p>
             I designed and built a Python-based decision-support application
@@ -108,129 +107,96 @@ export default function SourcingOptimizationPage() {
   <div className="case-study-container">
     <p className="section-label">01</p>
 
-    <h2>Why Manual Sourcing Wasn&apos;t Enough</h2>
+<h2>A Sourcing Decision Without a Common Cost Basis</h2>
 
-    <p>
-      Large project orders can require inventory from multiple warehouses before
-      being consolidated and shipped to the customer. Preparing that sourcing
-      plan meant coordinators had to check item availability across the warehouse
-      network, determine which locations could fulfill each requirement, and
-      piece together how those movements would affect the overall project.
-    </p>
+<p>
+  Preparing a sourcing plan required determining where inventory should come from across the warehouse network and where the order should be consolidated before final shipment.
+</p>
 
-    <p>
-      The process was time-intensive and depended heavily on experience and
-      judgment. Coordinators often used warehouse proximity and the number of
-      locations involved as practical proxies for cost efficiency, but the
-      closest sourcing option was not always the least expensive once transfer
-      costs and the final shipment to the customer were considered.
-    </p>
+<div className="case-study-after-cards">
+</div>
 
+<div className="decision-grid decision-grid-two">
+  <article className="decision-card">
+    <h3>Prioritize Proximity</h3>
     <p>
-      The real problem was therefore not just inventory visibility. It was the
-      lack of a consistent way to compare sourcing scenarios and quantify their
-      expected logistics cost before the plan was finalized.
+      Favor warehouses closer to the project destination to reduce expected
+      travel distance.
     </p>
+  </article>
+
+  <article className="decision-card">
+    <h3>Prioritize Consolidation</h3>
+    <p>
+      Source from fewer warehouses to reduce the number of transfers required
+      before final shipment.
+    </p>
+  </article>
+</div>
+
+<div className="case-study-after-cards">
+  <p>
+    The opportunity was to put those alternatives on the same cost basis and
+    give coordinators a consistent way to identify the most cost-efficient
+    sourcing configuration.
+  </p>
+</div>
   </div>
 </section>
 
       {/* 02 */}
-      <section className="case-study-section case-study-muted">
-        <div className="case-study-container">
-          <p className="section-label">02</p>
-
-          <h2>The Opportunity Was Bigger Than a Report</h2>
-
-         <p>
-  The project started with a request for a Power BI sourcing matrix that would
-  allow coordinators to enter an order and see inventory availability across
-  the warehouse network.
-</p>
-
-<p>
-  That would improve visibility, but it would still leave the hardest part of
-  the workflow with the coordinator: deciding which warehouses should supply
-  the order and which staging location would produce the most cost-efficient
-  overall plan.
-</p>
-
-<div className="case-study-insight">
-  <p className="section-label">Decision Reframing</p>
-
-  <h3>
-    Given the inventory available across the warehouse network, what sourcing
-    and staging configuration provides the most cost-efficient way to fulfill
-    the project?
-  </h3>
-
-  <p>
-    Reframing the problem around that decision changed the solution from a
-    reporting layer into an operational decision-support application.
-  </p>
-</div>
-        </div>
-      </section>
-
-      {/* 03 */}
       <section className="case-study-section">
         <div className="case-study-container">
-          <p className="section-label">03</p>
+          <p className="section-label">02</p>
 
           <h2>How the Decision Engine Works</h2>
 
           <p>
   The application turns the sourcing decision into a structured scenario
-  evaluation. A coordinator enters a primary order and, when needed, related
-  orders that should be fulfilled together. The system consolidates the
+  evaluation. The user enters a primary project order and, when needed,
+  related orders that should be fulfilled together. The tool consolidates the
   required demand, evaluates inventory availability across the warehouse
-  network, and builds sourcing plans for the available staging locations.
+  network, and builds sourcing plans across the available staging locations.
 </p>
 
 <p>
   For each scenario, the Python engine determines the required source-to-staging
-  movements, estimates the cost of those transfers and the final shipment to the
-  customer, applies relevant business rules such as internal transfer-truck
-  treatment, and ranks the resulting scenarios by total estimated sourcing cost.
+  movements, taps into an internal shipping-cost calculator API to estimate the
+  cost of those transfers and the final shipment to the customer, applies
+  relevant business rules, and ranks the resulting scenarios by total estimated
+  sourcing cost.
 </p>
 
-<div className="architecture-strip">
-  <span>Project Orders</span>
-  <span>Inventory Availability</span>
-  <span>Sourcing Scenarios</span>
-  <span>Shipping Cost Estimates</span>
-  <span>Business Rules</span>
-  <span>Scenario Ranking</span>
-  <span>Recommended Plan</span>
-</div>
-
-<p>
-  The result is a recommended sourcing plan built on a consistent cost basis,
-  rather than a manual comparison driven primarily by distance and experience.
-</p>
         </div>
       </section>
 
-      {/* 04 */}
+      {/* 03 */}
       <section className="case-study-section case-study-muted">
         <div className="case-study-container">
-          <p className="section-label">04</p>
+          <p className="section-label">03</p>
 
-          <h2>Making the Tradeoffs Visible</h2>
+          <h2>Comparing Sourcing Scenarios</h2>
 
           <p>
-  The application does not treat the recommendation as a black box.
-  Coordinators can select an alternative staging warehouse and immediately
-  see how that decision changes the expected cost and operational complexity
-  of the plan.
+  The recommended plan remains transparent and reviewable. Users can select
+  another staging scenario and immediately compare its estimated cost,
+  warehouse requirements, inventory availability, transfer savings, and route
+  structure against the recommended option.
 </p>
 
-<p>
-  The comparison surfaces the estimated cost difference versus the recommended
-  scenario, the number of warehouses involved, inventory availability, transfer
-  savings, and the resulting route structure. This gives users the flexibility
-  to account for operational constraints while making the cost of that tradeoff
-  explicit before the sourcing plan is finalized.
-</p>
+<div className="case-study-insight">
+  <p className="section-label">Example Scenario</p>
+
+  <h3>
+    One alternative increased estimated sourcing cost by 4.4% and required two
+    additional warehouses.
+  </h3>
+
+  <p>
+    The comparison gives users a clearer basis for deciding whether an
+    operational preference justifies the additional cost.
+  </p>
+</div>
 
 <figure className="case-study-visual">
   <Image
@@ -247,177 +213,105 @@ export default function SourcingOptimizationPage() {
   </figcaption>
 </figure>
 
-<div className="case-study-insight">
-  <p className="section-label">Example Scenario</p>
 
-  <h3>
-    A different staging choice increased estimated sourcing cost by 4.4% and
-    required two additional warehouses.
-  </h3>
-
-  <p>
-    The tool preserves coordinator control while providing a clearer basis for
-    evaluating when an operational preference is worth the additional cost.
-  </p>
-</div>
         </div>
       </section>
+
+      {/* 04 */}
+      <section className="case-study-section">
+        <div className="case-study-container">
+          <p className="section-label">04</p>
+
+          <h2>Operational Output</h2>
+
+          <div className="case-study-output-copy">
+  <p>
+    Beyond the recommendation itself, the application exposes the warehouse
+    movements, item-level detail, quantities, and estimated transfer costs
+    behind the selected sourcing plan.
+  </p>
+
+  <p>
+    The user can also generate an Excel export containing the output at multiple
+    levels of detail, making it easier to carry the sourcing plan into the
+    team&apos;s downstream operational workflows.
+  </p>
+</div>
+
+<figure className="case-study-visual">
+  <Image
+    src="/images/sourcing-optimization/scenario-ranking.png"
+    alt="Scenario ranking table comparing staging warehouses by estimated sourcing cost."
+    width={1600}
+    height={950}
+    className="case-study-image"
+  />
+
+</figure>
+
+<figure className="case-study-visual">
+  <Image
+    src="/images/sourcing-optimization/sourcing-plan-output.png"
+    alt="Generated Excel sourcing-plan output containing the recommended staging strategy and supporting operational detail."
+    width={1600}
+    height={950}
+    className="case-study-image"
+  />
+
+</figure>
+
+        </div>
+      </section>
+
+      <section className="case-study-section case-study-muted">
+  <div className="container">
+    <div className="case-study-heading">
+      <p className="section-label">Business Impact</p>
+
+      <h2>A faster, more consistent sourcing workflow</h2>
+    </div>
+
+    <div className="decision-grid">
+      <article className="decision-card">
+        <h3>8x+ Faster</h3>
+
+        <p>
+          Early use reduced sourcing-plan preparation from roughly a full
+          workday to about one hour per project.
+        </p>
+      </article>
+
+      <article className="decision-card">
+        <h3>More Consistent Decisions</h3>
+
+        <p>
+          Sourcing alternatives are evaluated against a common estimated-cost
+          framework rather than individual heuristics alone.
+        </p>
+      </article>
+
+      <article className="decision-card">
+        <h3>Greater Cost Visibility</h3>
+
+        <p>
+          Users can see how transfer costs, final-shipment costs, and alternative
+          staging choices affect the overall sourcing plan.
+        </p>
+      </article>
+    </div>
+
+  </div>
+</section>
 
       {/* 05 */}
       <section className="case-study-section">
         <div className="case-study-container">
           <p className="section-label">05</p>
 
-          <h2>From Recommendation to Execution</h2>
-
-          <p>
-  The recommended scenario is not treated as a final answer in isolation.
-  The application preserves the alternatives behind it and exposes the
-  operational detail needed to understand and execute the selected plan.
-</p>
-
-<figure className="case-study-visual">
-  <Image
-    src="/images/sourcing-optimization/scenario-ranking.png"
-    alt="Scenario ranking table comparing staging warehouses by estimated sourcing cost, warehouse usage, transfer cost, and final shipment cost."
-    width={1600}
-    height={950}
-    className="case-study-image"
-  />
-
-  <figcaption>
-    Each staging scenario is ranked on a consistent estimated-cost basis so the
-    recommendation can be compared against the full set of evaluated alternatives.
-  </figcaption>
-</figure>
-
-<div className="case-study-insight">
-  <p className="section-label">Traceable Decision Logic</p>
-
-  <h3>
-    The recommendation can be followed from scenario ranking down to the
-    warehouse and item movements required to execute it.
-  </h3>
-
-  <p>
-    Coordinators can inspect which source warehouses feed the staging location,
-    the items and quantities involved, and the estimated cost associated with
-    each transfer.
-  </p>
-</div>
-
-<figure className="case-study-visual">
-  <Image
-    src="/images/sourcing-optimization/transfer-detail.png"
-    alt="Item-level sourcing transfer detail showing source and staging warehouses, product identifiers, descriptions, and quantities."
-    width={1600}
-    height={950}
-    className="case-study-image"
-  />
-
-  <figcaption>
-    Item-level drill-down keeps the sourcing recommendation transparent and
-    operationally usable rather than reducing the result to a single warehouse
-    selection.
-  </figcaption>
-</figure>
-
-<p>
-  Once a scenario is selected, the application generates a structured Excel
-  sourcing plan that fits into the team&apos;s existing downstream workflow.
-  The workbook retains the recommended staging strategy, warehouse assignments,
-  cost detail, exceptions, and supporting scenario information.
-</p>
-
-<figure className="case-study-visual">
-  <Image
-    src="/images/sourcing-optimization/sourcing-plan-output.png"
-    alt="Generated Excel sourcing plan summarizing the recommended staging warehouse, sourcing assignments, cost outputs, and operational details."
-    width={1600}
-    height={950}
-    className="case-study-image"
-  />
-
-  <figcaption>
-    The selected scenario is translated into a structured operational output,
-    closing the gap between analysis and execution.
-  </figcaption>
-</figure>
-        </div>
-      </section>
-
-      {/* 06 */}
-      <section className="case-study-section case-study-muted">
-        <div className="case-study-container">
-          <p className="section-label">06</p>
-
-          <h2>Business Impact</h2>
-
-          <p>
-  The new workflow significantly reduces the manual effort required to prepare
-  sourcing plans. Instead of checking inventory warehouse by warehouse and
-  reasoning through alternatives manually, coordinators can generate a
-  structured recommendation and focus their time on validating exceptions and
-  operational considerations.
-</p>
-
-<p>
-  In early operational use, sourcing-plan preparation has moved from taking
-  much of a coordinator&apos;s day to roughly one hour per project. The tool is
-  also creating greater consistency and visibility by giving the team a common
-  cost-based framework for comparing sourcing decisions.
-</p>
-
-<div className="decision-grid">
-  <article className="decision-card">
-    <h3>Faster Planning</h3>
-
-    <p>
-      Automated inventory evaluation and scenario comparison remove much of the
-      repetitive analysis that previously slowed project sourcing.
-    </p>
-  </article>
-
-  <article className="decision-card">
-    <h3>More Consistent Decisions</h3>
-
-    <p>
-      Coordinators can evaluate sourcing options against the same cost logic
-      instead of relying primarily on individual experience and proximity-based
-      heuristics.
-    </p>
-  </article>
-
-  <article className="decision-card">
-    <h3>Greater Cost Visibility</h3>
-
-    <p>
-      The application makes transfer costs, final-shipment costs, and the tradeoffs
-      between alternative staging scenarios visible before the plan is finalized.
-    </p>
-  </article>
-</div>
-
-<p className="case-study-note">
-  <strong>Impact note:</strong> The approximate one-hour planning time reflects
-  early operational use and has not been established through a formal time study.
-  Financial savings are not yet presented because realized cost impact is still
-  being evaluated.
-</p>
-        </div>
-      </section>
-
-      {/* 07 */}
-      <section className="case-study-section">
-        <div className="case-study-container">
-          <p className="section-label">07</p>
-
           <h2>Implementation</h2>
 
           <p>
-  The solution combines enterprise data preparation with a Python-based
-  sourcing engine, an internal shipping-cost API, and a Streamlit application
-  used by the project fulfillment team.
+  The solution combines enterprise data preparation with a Python-based sourcing engine, an internal shipping-cost API, and a Streamlit application used to evaluate and operationalize sourcing scenarios. AI-assisted development accelerated parts of the Python build while the business logic, workflow design, decision rules, and implementation remained grounded in the sourcing process I designed.
 </p>
 
 <p>
@@ -429,33 +323,14 @@ export default function SourcingOptimizationPage() {
   downstream use.
 </p>
 
-<div className="architecture-strip">
+<div className="architecture-strip implementation-strip">
   <span>Power BI</span>
   <span>Python</span>
   <span>Shipping API</span>
   <span>Streamlit</span>
+  <span>AI-Assisted Development</span>
   <span>Excel Output</span>
 </div>
-        </div>
-      </section>
-
-      {/* 08 */}
-      <section className="case-study-section case-study-muted">
-        <div className="case-study-container">
-          <p className="section-label">08</p>
-
-          <h2>What the System Enables</h2>
-
-          <p>
-  The current engine prioritizes estimated sourcing cost while accounting for
-  inventory availability and existing transfer rules.
-</p>
-
-<p>
-  A future extension could incorporate expected delivery timing and service
-  requirements into scenario evaluation, allowing coordinators to balance cost
-  efficiency against fulfillment speed when project priorities require it.
-</p>
         </div>
       </section>
 

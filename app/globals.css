@@ -421,8 +421,13 @@ a {
   max-width: 700px;
   margin: 30px 0 0;
   color: var(--muted);
-  font-size: 21px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.case-study-hero-image {
+  width: 84%;
+  margin: 44px auto 0;
 }
 
 .case-study-hero-placeholder {
@@ -634,6 +639,11 @@ a {
   transform: translateX(-50%);
 }
 
+.case-study-visual-hero {
+  width: min(990px, calc(100vw - 48px));
+  margin-top: 44px;
+}
+
 .case-study-image {
   display: block;
   width: 100%;
@@ -683,6 +693,54 @@ a {
   gap: 16px;
 }
 
+.case-study-followup {
+  margin-top: 36px;
+}
+
+.decision-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 700px) {
+  .decision-grid-two {
+    grid-template-columns: 1fr;
+  }
+}
+
+.implementation-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.implementation-strip span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .implementation-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .implementation-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-study-output-copy {
+  margin-top: 36px;
+}
+
+.case-study-after-cards {
+  margin-top: 32px;
+}
+
 .framework-grid div,
 .framework-score,
 .framework-outcome,
@@ -691,6 +749,28 @@ a {
   background: #ffffff;
   padding: 18px;
   border-radius: var(--radius-small);
+}
+
+.tech-tag {
+  padding: 13px 16px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .architecture-strip-sourcing {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .architecture-strip-sourcing {
+    grid-template-columns: 1fr;
+  }
 }
 
 .framework-score {
@@ -717,6 +797,10 @@ a {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 40px;
+}
+
+.case-study-followup {
+  margin-top: 2rem;
 }
 
 .architecture-strip span {
