@@ -38,7 +38,7 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-muted"> 
         <div className="container">
           <article className="work-card work-card-featured">
             <div className="work-card-copy">
@@ -72,7 +72,7 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section className="section section-muted">
+      <section className="section">
         <div className="container">
           <p className="section-label">More Work</p>
 
