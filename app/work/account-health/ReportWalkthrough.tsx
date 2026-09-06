@@ -28,7 +28,7 @@ const walkthroughs = [
     description:
       "Review latest-period scores, monitor score movement, and connect changing trends back to specific accounts.",
     videoSrc: "/videos/account-health-trends.mp4",
-    poster: "/images/account-health/trends.png",
+    poster: "/images/account-health/portfolio-summary.png",
   },
   {
     id: "distribution",
@@ -37,7 +37,7 @@ const walkthroughs = [
     description:
       "Compare score distributions, isolate account groups, and focus review on segments where risk or opportunity is concentrated.",
     videoSrc: "/videos/account-health-portfolio-analysis.mp4",
-    poster: "/images/account-health/portfolio-analysis.png",
+    poster: "/images/account-health/portfolio-summary.png",
   },
 ];
 
@@ -50,61 +50,65 @@ export default function ReportWalkthrough() {
 
   return (
     <div className="report-walkthrough">
-      <div className="report-walkthrough-header">
-        <p className="section-label">Report Walkthrough</p>
-        <h3>Explore the decision workflow</h3>
-        <p>
-          Use the views below to preview how the report moves from portfolio-level
-          signal to account diagnosis, trend analysis, and focused review.
-        </p>
-      </div>
+      <div className="report-walkthrough-shell">
+        <aside className="report-walkthrough-sidebar">
+          <div className="report-walkthrough-kicker">
+            <p className="section-label">Report Walkthrough</p>
+            <h3>Explore the decision workflow</h3>
+            <p>
+              Use the views below to preview how the report moves from portfolio-level
+              signal to account diagnosis, trend analysis, and focused review.
+            </p>
+          </div>
 
-      <div className="walkthrough-tabs" aria-label="Report walkthrough views">
-        {walkthroughs.map((walkthrough) => (
-          <button
-            key={walkthrough.id}
-            type="button"
-            className={
-              activeWalkthrough.id === walkthrough.id
-                ? "walkthrough-tab walkthrough-tab-active"
-                : "walkthrough-tab"
-            }
-            onClick={() => setActiveId(walkthrough.id)}
-          >
-            {walkthrough.label}
-          </button>
-        ))}
-      </div>
+          <div className="walkthrough-tabs" aria-label="Report walkthrough views">
+            {walkthroughs.map((walkthrough) => (
+              <button
+                key={walkthrough.id}
+                type="button"
+                className={
+                  activeWalkthrough.id === walkthrough.id
+                    ? "walkthrough-tab walkthrough-tab-active"
+                    : "walkthrough-tab"
+                }
+                onClick={() => setActiveId(walkthrough.id)}
+              >
+                {walkthrough.label}
+              </button>
+            ))}
+          </div>
 
-      <div className="walkthrough-active-copy">
-        <h4>{activeWalkthrough.title}</h4>
-        <p>{activeWalkthrough.description}</p>
-      </div>
+          <div className="walkthrough-active-copy">
+            <h4>{activeWalkthrough.title}</h4>
+            <p>{activeWalkthrough.description}</p>
+          </div>
+        </aside>
 
-      <figure className="walkthrough-video-figure">
-        <div className="case-study-video-frame">
-          <video
-            key={activeWalkthrough.videoSrc}
-            className="case-study-video"
-            controls
-            muted
-            playsInline
-            preload="metadata"
-            poster={activeWalkthrough.poster}
-            width={1654}
-            height={931}
-          >
-            <source src={activeWalkthrough.videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div className="report-walkthrough-media">
+          <div className="case-study-video-frame">
+            <video
+              key={activeWalkthrough.videoSrc}
+              className="case-study-video"
+              controls
+              muted
+              playsInline
+              preload="metadata"
+              poster={activeWalkthrough.poster}
+              width={1654}
+              height={931}
+            >
+              <source src={activeWalkthrough.videoSrc} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <p className="demo-data-note">
+            Demo data note: Customer names, account attributes, classifications, and
+            financial values shown in this case study have been fictionalized or
+            transformed for public presentation.
+          </p>
         </div>
-
-        <figcaption className="demo-data-note">
-          Demo data note: Customer names, account attributes, classifications, and
-          financial values shown in this case study have been fictionalized or
-          transformed for public presentation.
-        </figcaption>
-      </figure>
+      </div>
     </div>
   );
 }

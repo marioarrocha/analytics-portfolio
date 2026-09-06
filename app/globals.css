@@ -879,14 +879,6 @@ a {
   text-transform: uppercase;
 }
 
-.demo-data-note {
-  max-width: 760px;
-  margin: 1.5rem auto 0;
-  color: var(--subtle);
-  font-size: 13px;
-  line-height: 1.6;
-}
-
 .decision-enabled-note {
   max-width: 760px;
   margin: 1.25rem auto 0;
@@ -1014,113 +1006,6 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius-medium);
   box-shadow: 0 20px 50px rgba(17, 19, 24, 0.08);
-}
-
-.report-walkthrough {
-  width: min(1240px, calc(100vw - 48px));
-  margin: 4.5rem auto 0;
-}
-
-.report-walkthrough .visual-section-intro {
-  width: min(760px, 100%);
-  margin: 0 auto 1.5rem;
-}
-
-.walkthrough-tabs {
-  width: min(760px, 100%);
-  margin: 1.25rem auto 1.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.walkthrough-tab {
-  appearance: none;
-  border: 1px solid #d8e0eb;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #334155;
-  padding: 0.65rem 1rem;
-  font: inherit;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    background 160ms ease,
-    border-color 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
-}
-
-.walkthrough-tab:hover {
-  border-color: #b8c7dc;
-  transform: translateY(-1px);
-}
-
-.walkthrough-tab-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
-}
-
-.walkthrough-active-copy {
-  width: min(760px, 100%);
-  margin: 0 auto 1.75rem;
-}
-
-.walkthrough-active-copy h4 {
-  margin: 0 0 0.5rem;
-  font-size: 1.15rem;
-  line-height: 1.35;
-}
-
-.walkthrough-active-copy p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.65;
-}
-
-.walkthrough-video-figure {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.case-study-video-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 24px 70px rgba(17, 19, 24, 0.12);
-}
-
-.case-study-video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: #ffffff;
-}
-
-.demo-data-note {
-  width: min(760px, 100%);
-  margin: 1rem auto 0;
-  color: var(--subtle);
-  font-size: 12px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.case-study-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-medium);
-  box-shadow: 0 20px 50px rgba(17, 19, 24, 0.08);
-  background: #ffffff;
 }
 
 .case-study-visual figcaption {
@@ -1322,197 +1207,6 @@ a {
   margin: 2rem auto 0;
 }
 
-.report-walkthrough {
-  width: min(1240px, calc(100vw - 48px));
-  margin: 4rem auto 0;
-}
-
-.report-walkthrough-header {
-  width: min(860px, 100%);
-  margin: 0 auto 1.5rem;
-}
-
-.report-walkthrough-header h3 {
-  margin: 0.35rem 0 1rem;
-  font-size: clamp(2rem, 3vw, 2.75rem);
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  font-weight: 500;
-}
-
-.report-walkthrough-header p {
-  color: #526071;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.walkthrough-tabs {
-  width: min(860px, 100%);
-  margin: 1.5rem auto 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.walkthrough-tab {
-  appearance: none;
-  border: 1px solid #d7deea;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #263244;
-  padding: 0.7rem 1rem;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    background 160ms ease,
-    border-color 160ms ease,
-    color 160ms ease;
-}
-
-.walkthrough-tab:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.walkthrough-tab-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
-}
-
-.walkthrough-tab-active:hover {
-  color: #ffffff;
-}
-
-.walkthrough-active-copy {
-  width: min(860px, 100%);
-  margin: 0 auto 1.5rem;
-}
-
-.walkthrough-active-copy h4 {
-  margin: 0 0 0.6rem;
-  font-size: 20px;
-  line-height: 1.35;
-  font-weight: 600;
-}
-
-.walkthrough-active-copy p {
-  margin: 0;
-  color: #526071;
-  font-size: 16px;
-  line-height: 1.65;
-}
-
-.case-study-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-medium);
-  background: #000000;
-  box-shadow: 0 20px 50px rgba(17, 19, 24, 0.08);
-}
-
-.demo-data-note {
-  width: min(860px, 100%);
-  margin: 1rem auto 0;
-  color: var(--subtle);
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-@media (max-width: 800px) {
-  .report-walkthrough {
-    width: min(100% - 32px, 1240px);
-  }
-
-  .walkthrough-tabs {
-    gap: 0.5rem;
-  }
-
-  .walkthrough-tab {
-    font-size: 13px;
-    padding: 0.65rem 0.85rem;
-  }
-
-  .case-study-image,
-  .case-study-video {
-    border-radius: var(--radius-small);
-  }
-}
-
-.demo-data-note {
-  width: min(860px, 100%);
-  margin: 1rem auto 0;
-  color: var(--subtle);
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-@media (max-width: 800px) {
-  .report-walkthrough {
-    width: min(100% - 32px, 1240px);
-  }
-
-  .walkthrough-tabs {
-    gap: 0.5rem;
-  }
-
-  .walkthrough-tab {
-    font-size: 13px;
-    padding: 0.65rem 0.85rem;
-  }
-}
-
-.walkthrough-tabs {
-  width: min(1080px, calc(100vw - 48px));
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0 auto 2rem;
-}
-
-.walkthrough-tab {
-  appearance: none;
-  border: 1px solid #dfe5ee;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #334155;
-  padding: 0.75rem 1rem;
-  font: inherit;
-  font-size: 14px;
-  line-height: 1;
-  cursor: pointer;
-  transition:
-    border-color 160ms ease,
-    background-color 160ms ease,
-    color 160ms ease;
-}
-
-.walkthrough-tab:hover {
-  border-color: #bfd4ff;
-  color: var(--accent);
-}
-
-.walkthrough-tab-active {
-  border-color: #bfd4ff;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-weight: 650;
-}
-
-.case-study-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-medium);
-  box-shadow: 0 20px 50px rgba(17, 19, 24, 0.08);
-  background: #ffffff;
-}
-
 @media (max-width: 800px) {
   .nav {
     align-items: flex-start;
@@ -1520,8 +1214,7 @@ a {
     padding: 22px 0;
   }
 
-.case-study-image,
-.case-study-video {
+.case-study-image {
   border-radius: var(--radius-small);
 }
 
@@ -1624,231 +1317,67 @@ a {
   padding: 104px 0;
 }
 
-/* Wider walkthrough showcase */
+/* Account Health report walkthrough */
 
-.report-walkthrough {
-  width: min(1240px, calc(100% - 48px));
-  margin: 4.75rem auto 0;
+.account-health-page .report-walkthrough {
+  width: min(1180px, calc(100% - 48px));
+  margin: 5rem auto 0;
 }
 
-.report-walkthrough-header {
-  width: min(1080px, 100%);
-  margin: 0 auto 2rem;
+.account-health-page .report-walkthrough-shell {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.7fr);
-  gap: 3rem;
-  align-items: end;
-}
-
-.report-walkthrough-header h3 {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 2.75rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
-  font-weight: 500;
-}
-
-.report-walkthrough-header p:not(.section-label) {
-  margin: 0;
-  color: #526071;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.report-walkthrough-layout {
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: minmax(300px, 330px) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
   align-items: start;
 }
 
-.report-walkthrough-sidebar {
-  position: sticky;
-  top: 96px;
+.account-health-page .report-walkthrough-sidebar,
+.account-health-page .report-walkthrough-media {
+  min-width: 0;
 }
 
-.walkthrough-tabs {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  margin: 0 0 1.5rem;
+.account-health-page .report-walkthrough-kicker {
+  margin-bottom: 1.75rem;
 }
 
-.walkthrough-tab {
-  width: 100%;
-  border: 1px solid #d8e0ea;
-  border-radius: 999px;
-  padding: 0.75rem 1rem;
-  background: #ffffff;
-  color: #334155;
-  font: inherit;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-align: left;
-  cursor: pointer;
-  transition:
-    background 160ms ease,
-    border-color 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
+.account-health-page .report-walkthrough-kicker .section-label {
+  margin-bottom: 1.25rem;
 }
 
-.walkthrough-tab:hover {
-  border-color: #b9c8dc;
-  transform: translateX(2px);
-}
-
-.walkthrough-tab-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
-}
-
-.walkthrough-active-copy {
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-}
-
-.walkthrough-active-copy h4 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
-  line-height: 1.2;
-  letter-spacing: -0.025em;
-}
-
-.walkthrough-active-copy p {
-  margin: 0;
-  color: #526071;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.walkthrough-video-figure {
-  width: 100%;
-  margin: 0;
-}
-
-.case-study-video-frame {
-  width: 100%;
-  aspect-ratio: 1654 / 931;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-medium);
-  background:
-    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-  box-shadow: 0 24px 60px rgba(17, 19, 24, 0.1);
-}
-
-.case-study-video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: #ffffff;
-}
-
-.demo-data-note {
-  max-width: 760px;
-  margin: 1rem auto 0;
-  color: var(--subtle);
-  font-size: 12px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* Keep the capability cards aligned with the video system */
-
-.account-health-page .screenshot-callout-grid {
-  margin-top: 2.5rem;
-}
-
-/* Responsive walkthrough */
-
-@media (max-width: 980px) {
-  .report-walkthrough-header,
-  .report-walkthrough-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .report-walkthrough-sidebar {
-    position: static;
-  }
-
-  .walkthrough-tabs {
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 0.25rem;
-  }
-
-  .walkthrough-tab {
-    width: auto;
-    white-space: nowrap;
-    text-align: center;
-  }
-}
-
-@media (max-width: 800px) {
-  .account-health-page .container,
-  .account-health-page .case-study-container,
-  .account-health-page .before-after-grid,
-  .account-health-page .screenshot-callout-grid,
-  .report-walkthrough {
-    width: calc(100% - 32px);
-  }
-
-  .account-health-page .case-study-section {
-    padding: 72px 0;
-  }
-
-  .report-walkthrough {
-    margin-top: 3.5rem;
-  }
-}
-
-/* Account Health walkthrough final layout */
-
-.account-health-page .report-walkthrough {
-  width: 100%;
-  margin: 4.75rem auto 0;
-}
-
-.account-health-page .report-walkthrough-header {
-  width: min(760px, calc(100% - 48px));
-  margin: 0 auto 1.75rem;
-}
-
-.account-health-page .report-walkthrough-header h3 {
+.account-health-page .report-walkthrough-kicker h3 {
   margin: 0 0 1rem;
-  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-size: clamp(1.85rem, 2.5vw, 2.35rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
   font-weight: 500;
 }
 
-.account-health-page .report-walkthrough-header p:not(.section-label) {
+.account-health-page .report-walkthrough-kicker > p:last-child {
   margin: 0;
   color: #526071;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .account-health-page .walkthrough-tabs {
-  width: min(760px, calc(100% - 48px));
-  margin: 0 auto 1.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 1.75rem;
 }
 
 .account-health-page .walkthrough-tab {
+  width: 100%;
+  appearance: none;
   border: 1px solid #d8e0ea;
   border-radius: 999px;
-  padding: 0.7rem 1rem;
+  padding: 0.72rem 1rem;
   background: #ffffff;
   color: #334155;
   font: inherit;
   font-size: 0.85rem;
   font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
   cursor: pointer;
   transition:
     background 160ms ease,
@@ -1859,24 +1388,30 @@ a {
 
 .account-health-page .walkthrough-tab:hover {
   border-color: #b9c8dc;
-  transform: translateY(-1px);
+  transform: translateX(2px);
 }
 
-.account-health-page .walkthrough-tab-active {
+.account-health-page .walkthrough-tab:focus-visible {
+  outline: 3px solid rgba(36, 87, 230, 0.22);
+  outline-offset: 2px;
+}
+
+.account-health-page .walkthrough-tab-active,
+.account-health-page .walkthrough-tab-active:hover {
   background: var(--accent);
   border-color: var(--accent);
   color: #ffffff;
 }
 
 .account-health-page .walkthrough-active-copy {
-  width: min(760px, calc(100% - 48px));
-  margin: 0 auto 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
 }
 
 .account-health-page .walkthrough-active-copy h4 {
   margin: 0 0 0.65rem;
-  font-size: clamp(1.15rem, 2vw, 1.35rem);
-  line-height: 1.25;
+  font-size: 1.15rem;
+  line-height: 1.3;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -1884,13 +1419,8 @@ a {
 .account-health-page .walkthrough-active-copy p {
   margin: 0;
   color: #526071;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.account-health-page .walkthrough-video-figure {
-  width: min(1180px, calc(100% - 48px));
-  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.65;
 }
 
 .account-health-page .case-study-video-frame {
@@ -1912,7 +1442,7 @@ a {
 }
 
 .account-health-page .demo-data-note {
-  width: min(760px, 100%);
+  max-width: 680px;
   margin: 1rem auto 0;
   color: var(--subtle);
   font-size: 12px;
@@ -1921,28 +1451,57 @@ a {
 }
 
 .account-health-page .screenshot-callout-grid {
-  margin-top: 3rem;
+  width: min(1180px, calc(100% - 48px));
+  margin: 4rem auto 0;
 }
 
-@media (max-width: 800px) {
-  .account-health-page .report-walkthrough {
-    margin-top: 3.5rem;
-  }
-
-  .account-health-page .report-walkthrough-header,
-  .account-health-page .walkthrough-tabs,
-  .account-health-page .walkthrough-active-copy,
-  .account-health-page .walkthrough-video-figure {
-    width: calc(100% - 32px);
+@media (max-width: 900px) {
+  .account-health-page .report-walkthrough-shell {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .account-health-page .walkthrough-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .account-health-page .walkthrough-tab {
-    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .account-health-page .container,
+  .account-health-page .case-study-container,
+  .account-health-page .before-after-grid,
+  .account-health-page .screenshot-callout-grid,
+  .account-health-page .report-walkthrough {
+    width: calc(100% - 32px);
+  }
+
+  .account-health-page .case-study-section {
+    padding: 72px 0;
+  }
+
+  .account-health-page .report-walkthrough {
+    margin-top: 3.75rem;
+  }
+
+  .account-health-page .screenshot-callout-grid {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .account-health-page .walkthrough-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .account-health-page .walkthrough-tab {
+    text-align: left;
+  }
+
+  .account-health-page .case-study-video-frame {
+    border-radius: var(--radius-small);
   }
 }
