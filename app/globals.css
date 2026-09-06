@@ -1317,6 +1317,86 @@ a {
   padding: 104px 0;
 }
 
+/* Account Health interaction polish */
+
+@keyframes account-health-flow-reveal {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.account-health-page .decision-flow > * {
+  opacity: 0;
+  animation: account-health-flow-reveal 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.account-health-page .decision-flow > :nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.account-health-page .decision-flow > :nth-child(2) {
+  animation-delay: 170ms;
+}
+
+.account-health-page .decision-flow > :nth-child(3) {
+  animation-delay: 240ms;
+}
+
+.account-health-page .decision-flow > :nth-child(4) {
+  animation-delay: 310ms;
+}
+
+.account-health-page .decision-flow > :nth-child(5) {
+  animation-delay: 380ms;
+}
+
+.account-health-page .decision-flow > :nth-child(6) {
+  animation-delay: 450ms;
+}
+
+.account-health-page .decision-flow > :nth-child(7) {
+  animation-delay: 520ms;
+}
+
+.account-health-page .decision-flow > :nth-child(8) {
+  animation-delay: 590ms;
+}
+
+.account-health-page .decision-flow > :nth-child(9) {
+  animation-delay: 660ms;
+}
+
+.account-health-page .summary-card,
+.account-health-page .before-after-column,
+.account-health-page .screenshot-callout,
+.account-health-page .architecture-strip span {
+  transition:
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+@media (hover: hover) {
+  .account-health-page .summary-card:hover,
+  .account-health-page .before-after-column:hover,
+  .account-health-page .screenshot-callout:hover,
+  .account-health-page .architecture-strip span:hover {
+    transform: translateY(-2px);
+    border-color: #c7d2e1;
+    box-shadow: 0 10px 24px rgba(17, 19, 24, 0.07);
+  }
+
+  .account-health-page .before-after-column.after:hover {
+    border-color: #9fbcff;
+  }
+}
+
 /* Account Health report walkthrough */
 
 .account-health-page .report-walkthrough {
@@ -1380,13 +1460,15 @@ a {
   text-align: left;
   cursor: pointer;
   transition:
-    background 160ms ease,
-    border-color 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease,
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .account-health-page .walkthrough-tab:hover {
+  background: #f8fafc;
   border-color: #b9c8dc;
   transform: translateX(2px);
 }
@@ -1401,6 +1483,7 @@ a {
   background: var(--accent);
   border-color: var(--accent);
   color: #ffffff;
+  box-shadow: 0 6px 14px rgba(36, 87, 230, 0.16);
 }
 
 .account-health-page .walkthrough-active-copy {
@@ -1431,6 +1514,15 @@ a {
   border-radius: var(--radius-medium);
   background: #ffffff;
   box-shadow: 0 24px 60px rgba(17, 19, 24, 0.1);
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.account-health-page .case-study-video-frame:hover,
+.account-health-page .case-study-video-frame:focus-within {
+  border-color: #ccd6e4;
+  box-shadow: 0 26px 64px rgba(17, 19, 24, 0.12);
 }
 
 .account-health-page .case-study-video {
@@ -1503,5 +1595,99 @@ a {
 
   .account-health-page .case-study-video-frame {
     border-radius: var(--radius-small);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .account-health-page .decision-flow > * {
+    opacity: 1;
+    translate: none;
+    animation: none;
+  }
+
+  .account-health-page .summary-card,
+  .account-health-page .before-after-column,
+  .account-health-page .screenshot-callout,
+  .account-health-page .architecture-strip span,
+  .account-health-page .walkthrough-tab,
+  .account-health-page .case-study-video-frame {
+    transition: none;
+  }
+
+  .account-health-page .summary-card:hover,
+  .account-health-page .before-after-column:hover,
+  .account-health-page .screenshot-callout:hover,
+  .account-health-page .architecture-strip span:hover,
+  .account-health-page .walkthrough-tab:hover {
+    transform: none;
+  }
+}
+
+/* Account Health hero workflow interaction polish */
+
+.account-health-page .decision-flow-step {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+.account-health-page .decision-flow-step:hover {
+  transform: translateY(-4px);
+  border-color: rgba(36, 87, 230, 0.28);
+  box-shadow: 0 16px 36px rgba(17, 19, 24, 0.08);
+}
+
+.account-health-page .decision-flow-action:hover {
+  background: #e8f1ff;
+  border-color: rgba(36, 87, 230, 0.34);
+}
+
+.account-health-page .decision-flow-step:hover .decision-flow-label {
+  color: var(--accent-dark);
+}
+
+.account-health-page .dimension-mini-grid span {
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.account-health-page .decision-flow-step:hover .dimension-mini-grid span {
+  border-color: rgba(36, 87, 230, 0.22);
+  background: #f1f6ff;
+  color: #183fb5;
+}
+
+@media (min-width: 1101px) {
+  .account-health-page .decision-flow-arrow {
+    transition:
+      color 180ms ease,
+      transform 180ms ease,
+      opacity 180ms ease;
+  }
+
+  .account-health-page .decision-flow:hover .decision-flow-arrow {
+    color: var(--accent-dark);
+    opacity: 0.9;
+  }
+
+  .account-health-page .decision-flow-step:hover + .decision-flow-arrow {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .account-health-page .decision-flow-step,
+  .account-health-page .decision-flow-arrow,
+  .account-health-page .dimension-mini-grid span {
+    transition: none;
+  }
+
+  .account-health-page .decision-flow-step:hover,
+  .account-health-page .decision-flow-step:hover + .decision-flow-arrow {
+    transform: none;
   }
 }
